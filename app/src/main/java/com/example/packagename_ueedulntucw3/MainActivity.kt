@@ -41,7 +41,10 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun MyScreen() {
-
+    LazyColumn {
+        item {
+        }
+    }
 }
 
 @Preview(showBackground = true)
