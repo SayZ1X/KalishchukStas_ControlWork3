@@ -43,8 +43,17 @@ class MainActivity : ComponentActivity() {
 fun MyScreen() {
     LazyColumn {
         item {
+            ListItem(text = "Елемент")
         }
     }
+}
+
+@Composable
+fun ListItem(text: String) {
+    Text(
+        text = text,
+        modifier = Modifier.padding(8.dp)
+    )
 }
 
 @Preview(showBackground = true)
