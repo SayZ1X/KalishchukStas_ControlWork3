@@ -44,7 +44,11 @@ fun MyScreen() {
     LazyColumn {
         item {
             Row {
-                ListItem(text = "Елемент")
+                Column(modifier = Modifier.weight(1f)) {
+                    (1..30).forEach { index ->
+                        ListItem(text = "Елемент ${index}",)
+                    }
+                }
             }
         }
     }
