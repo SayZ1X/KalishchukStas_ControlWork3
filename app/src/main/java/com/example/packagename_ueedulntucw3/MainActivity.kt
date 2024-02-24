@@ -49,6 +49,11 @@ fun MyScreen() {
                         ListItem(text = "Елемент ${index}",)
                     }
                 }
+                Column(modifier = Modifier.weight(1f)) {
+                    (31..60).forEach { index ->
+                        ListItem(text = "Елемент ${index}")
+                    }
+                }
             }
         }
     }
