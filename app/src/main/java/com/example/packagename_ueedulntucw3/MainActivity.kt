@@ -43,7 +43,9 @@ class MainActivity : ComponentActivity() {
 fun MyScreen() {
     LazyColumn {
         item {
-            ListItem(text = "Елемент")
+            Row {
+                ListItem(text = "Елемент")
+            }
         }
     }
 }
